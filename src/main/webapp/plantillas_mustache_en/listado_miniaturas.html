@@ -1,0 +1,29 @@
+<div style="text-align: center;">ultimas miniaturas disponibles:</div>
+<div class="d-flex align-content-stretch flex-wrap">
+{{#.}}
+
+
+	<div class="card col-4 m-5" >
+ 		<a href="#" id_producto="{{id}}" class="enlace_detalles" style="text-decoration: none;"><img src="subidas/{{id}}.jpg?t={{fecha_hora_actual}}" class="card-img-top"></a>
+  		<div class="card-body">
+    	<h5 class="card-title">{{nombre}}</h5>
+    	<p class="card-text">price: {{precio}}</p>
+  	</div>
+  	
+  	<ul class="list-group list-group-flush">
+    	<li class="list-group-item">Format: {{formato}}</li>
+    	<li class="list-group-item">Mark: {{marca}}</li>
+    	<li class="list-group-item">material: {{material}}</li>
+    	<li class="list-group-item">category: {{nombre_categoria}}</li>
+    	<li class="list-group-item">unit type: {{tipoUnidad}}</li>
+    	<li class="list-group-item">faction: {{faccion}}</li>
+    	
+    	<li class="list-group-item"><a href="#" id_producto="{{id}}" class="enlace_detalles" style="text-decoration: none;">ver producto</a></li>
+
+  	</ul>
+	
+	</div>
+	
+{{/.}}
+
+</div>

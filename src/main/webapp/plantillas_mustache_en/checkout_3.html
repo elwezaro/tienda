@@ -1,0 +1,94 @@
+<div><h3>order products:</h3></div>
+<div class="row justify-content-center">
+	<div class="col-12 ms-5"><h3>productos del pedido:</h3></div>
+	<div class="col-6">
+		<table class="table"  id="productos_pedido">
+  			<thead>
+    		 <tr>
+      		  <th scope="col">Title</th>
+      		  <th scope="col">image</th>
+      		  <th scope="col">amount</th>
+      		  <th scope="col">Unit price:</th>
+    		 </tr>
+   			</thead>
+ 
+	
+
+	
+ 
+  			 <tbody>
+ 			{{#miniaturas}}
+    		<tr>
+     		 <th scope="row "> {{nombre}}</th>
+     		 <td><img style="height: 60px;" src="subidas/{{miniatura_id}}.jpg"/><br></td>
+      		 <td> {{cantidad}}<br></td>
+      		 <td> {{precio}}<br></td>
+		 	</tr>
+     		{{/miniaturas}}
+  			</tbody>
+		</table>
+ 	</div>
+</div>
+<div class="row justify-content-center">
+	<div class="col-12 ms-5"><h3>datos de envio:</h3></div>
+	<div class="col-6 ">
+		<table class="table"  id="productos_pedido">
+ 		 <thead>
+   			<tr>
+     		 <th scope="col">full name</th>
+    		 <th scope="col">direction</th>
+      	     <th scope="col">Province</th>
+      		 <th scope="col">country</th>
+      	     <th scope="col">Postal Code</th>
+    		</tr>
+  		 </thead>
+    	 <tbody>
+ 
+    	 <tr>
+     	  <th scope="row"> {{nombreCompleto}}</th>
+      	  <td>{{direccion}}</td>
+      	  <td> {{provincia}}<br></td>
+      	  <td> {{pais}}<br></td>
+      	  <td> {{codigoPostal}}<br></td>
+   		 </tr>
+  
+  		 </tbody>
+	   	</table>
+	</div>
+</div>
+	<div class="row justify-content-center">
+	<div class="col-12 ms-5"><h3>datos de pago:</h3></div>
+	<div class="col-6 ">
+		<table class="table"  id="datos_pago">
+ 		 <thead>
+   			<tr>
+    		 <th scope="col">card holdere</th>
+      	     <th scope="col">card type</th>
+      		 <th scope="col">card number</th>
+      	     <th scope="col">cvp</th>
+    		</tr>
+  		 </thead>
+    	 <tbody>
+ 
+    	 <tr>
+     	  <th scope="row"> {{nombreCompleto}}</th>
+      	  <td>{{titularTarjeta}}</td>
+      	  <td> {{tipoTarjeta}}<br></td>
+      	  <td> {{numeroTarjeta}}<br></td>
+      	  <td> {{cvp}}<br></td>
+   		 </tr>
+  
+  		 </tbody>
+	   	</table>
+	</div>
+</div>
+	
+
+<div>
+	<button class="btn btn-secondary" style="margin: 10px;padding: 10px" id="boton_confirmar_pedido">TO CONFIRM ORDER</button>
+</div>
+
+
+
+
+

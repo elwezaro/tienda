@@ -1,0 +1,27 @@
+<div style="text-align: center;">carrito de la compra:</div>
+<div class="container">
+{{#.}}
+<div class="row justify-content-center m-5">
+
+	<div class="card col-5" >
+  		<div class="card-body">
+  		<img src="subidas/{{miniatura_id}}.jpg?t={{fecha_hora_actual}}" class="card-img-top">
+    	<h5 class="card-title">{{nombre}}</h5>
+    	<p class="card-text">precio: {{precio}}</p>
+  	</div>
+  	
+  	<ul class="list-group list-group-flush">
+    	<li class="list-group-item">cantidad: <input type="number" id_producto="{{miniatura_id}}" class="input_cantidad" value="{{cantidad}}" /><br/></li>
+ 		<li class="list-group-item"><a href="#" class="enlace_borrar_producto" id_producto="{{miniatura_id}}" >borrar producto</a></li>
+
+  	</ul>
+	
+	</div>
+	
+</div>
+{{/.}}
+
+<div class="m-5">
+	<a href="#" id="realizar_pedido" >REALIZAR PEDIDO</a>
+</div>
+</div>
